@@ -22,7 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="de" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <div className="flex min-h-screen bg-slate-950">
+        <div className="flex min-h-screen w-full bg-slate-950">
           <Header />
           <main className="flex min-h-screen min-w-0 flex-1 items-center justify-center py-8">
             <div className="container flex justify-center">{children}</div>

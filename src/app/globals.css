@@ -31,6 +31,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.support-form-screen {
+  width: 100%;
+  min-height: 100vh;
+  margin-block: -2rem;
+  display: flex;
+  align-items: center;
+  background: #f4f7f5;
+  color: #25332e;
+}
+
+.container:has(> .support-form-screen) {
+  max-width: none;
+  padding-inline: 0;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

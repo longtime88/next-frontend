@@ -1,10 +1,16 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useAuth } from '@/lib/auth'
 
 export function Header() {
+  const pathname = usePathname()
   const { user, logout } = useAuth()
+
+  if (pathname === '/') {
+    return null
+  }
 
   return (
     <header className="sticky top-0 z-50 flex h-screen w-20 shrink-0 flex-col border-r border-blue-700 bg-blue-600 text-white shadow-xl">
