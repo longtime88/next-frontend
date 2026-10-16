@@ -25,7 +25,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <div className="flex min-h-screen w-full bg-slate-950">
           <Header />
           <main className="flex min-h-screen min-w-0 flex-1 items-center justify-center py-8">
-            <div className="container flex justify-center">{children}</div>
+            <div className="container flex justify-center has-[>_.support-form-screen]:max-w-none has-[>_.support-form-screen]:px-0">{children}</div>
           </main>
         </div>
       </body>
